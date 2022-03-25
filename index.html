@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/main-min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./dist/main.min.js"></script>
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main class="wrapper">
+    <div class="bg"></div>
+    <div class="circles"></div>
+    <div class="title-box">
+      <p class="title-box__title">Simple, traffic-based pricing</p>
+      <p class="title-box__subtitle">Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="component">
+      <p class="component__page-views">Pageviews</p>
+      <input type="range" name="slider" min="1" max="5" value="3">
+      <p class="component__price">$<span class="component__month">/month</span></p>
+      <div class="component__billing">
+        <span class="component__billing component__billing--monthly">Monthly Billing</span>
+        <input type="checkbox" name="toggle" id="">
+        <span class="component__billing component__billing--yearly">Yearly Billing</span> <!--pseudo  25% discount-->
+      </div>
+      <div class="component__perks">
+        <p class="component__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of unlimited websites">Unlimited websites</p>
+        <p class="component__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of full data ownership">100% data ownership</p>
+        <p class="component__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of email reports">Email reports</p>
+        <button type="submit">Start my trial/button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
