@@ -1,5 +1,6 @@
 @use './util' as *;
 @use './base' as *;
+@use './components' as *;
 .wrapper
 {
     position: relative;
@@ -53,11 +54,7 @@
             letter-spacing: 1px;
             font-size: calc($intro - .1rem);
         }
-        input[name="slider"]
-        {
-            padding: 1em 0;
-            width: 95%;
-        }
+
         &__price
         {
             padding: 0.8em;
@@ -77,22 +74,32 @@
         {
             &--monthly
             {
-                padding: 0 0.5em;
+                display: inline-block;
+                text-align: center;
+                width: 7ch;
+                margin: 0 1em;
                 font-size: 1.4rem;
                 color: $text;
             }
             &--yearly
             {
-                padding: 0 0.5em;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                width: 7ch;
+                margin: 0 1em;
                 color: $text;
                 font-size: 1.4rem;
                 &::after
                 {
                     content: '-25%';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
                     padding: 0.2em 0.4em;
                     margin-left: 0.5em;
                     color: $discount;
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     font-weight: 800;
                     background-color: $discount-bg;
                     border-radius: 20px;
@@ -116,6 +123,7 @@
             align-items: center;
             &__perk
             {
+                margin: 0.2em 0;
                 text-align: center;
                 color: $text;
                 img

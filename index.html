@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/css/main-min.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
   <script src="./dist/main.min.js"></script>
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
@@ -27,7 +27,8 @@
         <p class="component__price"><span class="component__amount">$16.00</span><span class="component__month">/month</span></p>
         <div class="component__billing">
           <span class="component__billing component__billing--monthly">Monthly Billing</span>
-          <input type="checkbox" name="toggle" id="">
+          <input type="checkbox" name="toggle" id="toggle">
+          <label for="toggle" class="switch"></label>
           <span class="component__billing component__billing--yearly">Yearly Billing</span> <!--pseudo  25% discount-->
         </div>
         <hr class="component__divider">

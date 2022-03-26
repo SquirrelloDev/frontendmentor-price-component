@@ -1,0 +1,42 @@
+@use '../util/colors' as*;
+
+input[name=slider]
+{
+    -webkit-appearance: none;
+    padding: 1em 0;
+    width: 95%;
+    background: transparent;
+}
+input[name=slider]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+}
+input[name=slider]::-ms-track
+{
+    width: 95%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[name=slider]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    margin-top: -15px;
+    background-color: $slider-bg;
+    background-image: url('../../../dist/img/icon-slider.svg');
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[name=slider]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background-color: $empty-check;
+    border-radius: 30px;
+}
