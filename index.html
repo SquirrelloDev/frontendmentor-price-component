@@ -12,29 +12,32 @@
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
+  <div class="bg"><img src="./dist/img/bg-pattern.svg" alt=""></div>
   <main class="wrapper">
-    <div class="bg"></div>
-    <div class="circles"></div>
-    <div class="title-box">
-      <p class="title-box__title">Simple, traffic-based pricing</p>
-      <p class="title-box__subtitle">Sign-up for our 30-day trial. No credit card required.</p>
-    </div>
-    <div class="component">
-      <p class="component__page-views">Pageviews</p>
-      <input type="range" name="slider" min="1" max="5" value="3">
-      <p class="component__price">$<span class="component__month">/month</span></p>
-      <div class="component__billing">
-        <span class="component__billing component__billing--monthly">Monthly Billing</span>
-        <input type="checkbox" name="toggle" id="">
-        <span class="component__billing component__billing--yearly">Yearly Billing</span> <!--pseudo  25% discount-->
-      </div>
-      <div class="component__perks">
-        <p class="component__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of unlimited websites">Unlimited websites</p>
-        <p class="component__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of full data ownership">100% data ownership</p>
-        <p class="component__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of email reports">Email reports</p>
-        <button type="submit">Start my trial</button>
+    <div class="box">
+      <img src="./dist/img/pattern-circles.svg" alt="" class="circles">
+      <div class="title-box">
+        <p class="title-box__title">Simple, traffic-based pricing</p>
+        <p class="title-box__subtitle">Sign-up for our 30-day trial.</br> No credit card required.</p>
       </div>
     </div>
+      <div class="component">
+        <p class="component__page-views">100K Pageviews</p>
+        <input type="range" name="slider" min="1" max="5" value="3">
+        <p class="component__price"><span class="component__amount">$16.00</span><span class="component__month">/month</span></p>
+        <div class="component__billing">
+          <span class="component__billing component__billing--monthly">Monthly Billing</span>
+          <input type="checkbox" name="toggle" id="">
+          <span class="component__billing component__billing--yearly">Yearly Billing</span> <!--pseudo  25% discount-->
+        </div>
+        <hr class="component__divider">
+        <div class="component__perks">
+          <p class="component__perks__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of unlimited websites">Unlimited websites</p>
+          <p class="component__perks__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of full data ownership">100% data ownership</p>
+          <p class="component__perks__perk"><img src="./dist/img/icon-check.svg" alt="tick icon representing perk of email reports">Email reports</p>
+          <button type="submit">Start my trial</button>
+        </div>
+      </div>
   </main>
 </body>
 </html>

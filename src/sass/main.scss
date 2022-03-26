@@ -1,2 +1,149 @@
 @use './util' as *;
 @use './base' as *;
+.wrapper
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    .box
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    .title-box
+    {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        &__title
+        {
+            margin-bottom: 1em;
+            font-weight: 800;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        &__subtitle
+        {
+            font-size: $intro;
+            text-align: center;
+            color: $text;
+        }
+    }
+    .component
+    {
+        padding: .8em;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $pricing;
+        border-radius: 8px;
+        &__page-views
+        {
+            padding: 0.8em 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: $text;
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size: calc($intro - .1rem);
+        }
+        input[name="slider"]
+        {
+            padding: 1em 0;
+            width: 95%;
+        }
+        &__price
+        {
+            padding: 0.8em;
+            text-align: center;
+        }
+        &__amount
+        {
+            font-weight: 800;
+            font-size: calc($large + .2rem);
+        }
+        &__month
+        {
+            margin-left: 0.5em;
+            color: $text;
+        }
+        &__billing
+        {
+            &--monthly
+            {
+                padding: 0 0.5em;
+                font-size: 1.4rem;
+                color: $text;
+            }
+            &--yearly
+            {
+                padding: 0 0.5em;
+                color: $text;
+                font-size: 1.4rem;
+                &::after
+                {
+                    content: '-25%';
+                    padding: 0.2em 0.4em;
+                    margin-left: 0.5em;
+                    color: $discount;
+                    font-size: 1rem;
+                    font-weight: 800;
+                    background-color: $discount-bg;
+                    border-radius: 20px;
+                }
+
+            }
+        }
+        &__divider
+        {
+            height: 1px;
+            width: 100%;
+            margin: 1em 0;
+            background-color: $empty-check;
+            border: none;
+
+        }
+        &__perks
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__perk
+            {
+                text-align: center;
+                color: $text;
+                img
+                {
+                    margin-right: .8em;
+                }
+            }
+            [type="submit"]
+            {
+                margin-top: 2em;
+                padding: 1em 4em;
+                border: 1px solid transparent;
+                border-radius: 30px;
+                background-color: $btn-bg;
+                font-family: 'Manrope', sans-serif;
+                color: $btn-text;
+                font-weight: 800;
+            }
+        }
+
+    }
+}
+.bg
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
