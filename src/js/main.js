@@ -18,7 +18,7 @@ const update = (arr) => {
         }
     }
 }
-slider.addEventListener('change', ()=> {
+slider.addEventListener('input', ()=> {
     toggle.checked ? update(pricesObj.discount) : update(pricesObj.prices);
 });
 toggle.addEventListener('click', ()=>

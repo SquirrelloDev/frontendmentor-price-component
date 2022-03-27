@@ -7,6 +7,7 @@
     height: 20px;
     background-color: $full-check;
     border-radius: 20px;
+    cursor: pointer;
 }
 .switch::after
 {
@@ -28,9 +29,14 @@
 [name=toggle]:checked + .switch
 {
     background-color: $slider-bg;
-
 }
 [name=toggle]
 {
     display: none;
+}
+@media (min-width:375px) {
+    .switch
+    {
+        transform: translateY(25%);
+    }
 }

@@ -140,7 +140,13 @@
                 background-color: $btn-bg;
                 font-family: 'Manrope', sans-serif;
                 color: $btn-text;
+                transition: color .2s;
                 font-weight: 800;
+                cursor: pointer;
+                &:hover
+                {
+                    color: $pricing;
+                }
             }
         }
 
@@ -154,4 +160,4 @@
     overflow: hidden;
     width: 100%;
 }
-
+@import './medium'

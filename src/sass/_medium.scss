@@ -1,0 +1,38 @@
+@media (min-width: 375px) {
+    .wrapper
+    {
+        .component
+        {
+            &__billing
+            {
+                &--monthly, &--yearly
+                {
+                    width: 11ch;
+                    
+                }
+            }
+        }
+    }
+}
+@media (min-width: 375px) {
+    .wrapper
+    {
+        .component
+        {
+            &__billing
+            {
+                &--yearly
+                {
+                    &::after
+                    {
+                        content: '-25% discount';
+                        display: inline-block;
+                        margin-left: 1em;
+                        width: 12ch;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
